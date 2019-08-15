@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres:10
+    # container_name: epln-lib-db
+    volumes:
+      - ./db-data:/var/lib/postgresql
+    environment:
+      POSTGRES_USER: somleng
+      POSTGRES_PASSWORD: somleng
+      POSTGRES_DB: somleng
+    ports:
+      - '5432:5432'
+

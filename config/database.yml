@@ -10,7 +10,11 @@ default: &default
 
 development:
   <<: *default
-  database: "somleng_scfm_development"
+  database: somleng
+  user: somleng
+  password: somleng
+  host: 127.0.0.1
+  port: 5432
 
 test:
   <<: *default

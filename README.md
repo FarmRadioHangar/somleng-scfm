@@ -17,3 +17,17 @@ See [DEPLOYMENT](https://github.com/somleng/somleng-scfm/blob/master/docs/DEPLOY
 ## License
 
 The software is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+## How to run locally (dev mode)
+
+```
+docker-compose -f docker-compose.db.yml up
+```
+
+in another terminal
+
+```
+RAILS_ENV=development rake db:migrate
+RAILS_ENV=development rake db:seed
+RAILS_ENV=development rails s
+```
