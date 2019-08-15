@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  prod-db:
+    image: postgres:10
+    volumes:
+      - ./db-data:/var/lib/postgresql
+    environment:
+      POSTGRES_USER: somleng-prod
+      POSTGRES_PASSWORD: somleng-prod
+      POSTGRES_DB: somleng-prod
+    ports:
+      - '5432:5432'
+

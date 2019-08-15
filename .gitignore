@@ -34,3 +34,6 @@ vendor/ruby
 
 examples.txt
 master.key
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key

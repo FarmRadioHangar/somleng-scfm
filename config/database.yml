@@ -22,3 +22,9 @@ test:
 
 production:
   <<: *default
+  database: somleng-prod
+  user: somleng-prod
+  password: somleng-prod
+  host: 127.0.0.1
+  port: 5432
+
