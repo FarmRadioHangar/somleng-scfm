@@ -2,7 +2,11 @@ class ApplicationJob < ActiveJob::Base
   retry_on ActiveRecord::StaleObjectError
 
   def self.parse_queue_name(queue_url)
-    queue_url.split("/").last
+    if (queue_url)
+      queue_url.split("/").last
+    else
+      queue_url
+    end
   end
 
   def self.default_queue_name
