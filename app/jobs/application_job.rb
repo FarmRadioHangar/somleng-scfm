@@ -9,6 +9,6 @@ class ApplicationJob < ActiveJob::Base
     parse_queue_name(Rails.configuration.app_settings.fetch("default_queue_url"))
   end
 
-  # queue_as(default_queue_name)
-  queue_as :somleng_queue
+  queue_as(default_queue_name)
+  # queue_as :somleng_queue
 end
