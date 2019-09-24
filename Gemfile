@@ -75,3 +75,5 @@ group :test do
   gem "webmock"
   gem "wisper-rspec"
 end
+
+gem "mini_racer"
