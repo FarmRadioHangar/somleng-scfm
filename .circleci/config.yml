@@ -303,11 +303,3 @@ workflows:
           filters:
             branches:
               only: master
-      - deploy_documentation:
-          context: Somleng
-          requires:
-            - build_documentation
-            - deploy_production
-          filters:
-            branches:
-              only: master
